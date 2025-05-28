@@ -21,9 +21,9 @@ function App() {
       <main style={{
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',   // align items to the left instead of center
         gap: '24px',
-        padding: '40px 5vw',
+        padding: '40px 0',               // remove side padding
         backgroundColor: '#f9f9f9',
         minHeight: '80vh'
       }}>
