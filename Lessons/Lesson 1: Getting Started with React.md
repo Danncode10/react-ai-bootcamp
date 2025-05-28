@@ -53,6 +53,46 @@ npm install
 npm run dev
 ```
 
+---
+
+##### ✅ What To Do Now:
+
+When you see:
+
+```
+◆  Select a framework:
+│  ● Vanilla
+│  ○ Vue
+│  ○ React
+...
+```
+
+##### 👉 Use your arrow keys to select:
+
+```
+○ React
+```
+
+Then press **Enter**.
+
+---
+
+##### ⏭️ Next Steps (after selecting React):
+
+1. You’ll likely be asked:
+
+   ```
+   ✔ Select a variant: › JavaScript
+   ```
+
+   * ✅ Just select **JavaScript** (unless you’re doing TypeScript)
+
+2. Then it will say:
+
+   ```
+   Scaffolding project in ./my-react-app...
+   ```
+
 #### 2. Open `my-react-app` in VS Code
 
 You’ll see a folder structure like this:
