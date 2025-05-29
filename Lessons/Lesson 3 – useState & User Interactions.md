@@ -102,8 +102,59 @@ export default Counter;
 
 ---
 
-### More details: 
+### What does this line mean?
 
+```js
+const [count, setCount] = useState(0);
+```
+
+This is called **array destructuring** — a feature in **JavaScript**, not specific to React.
+
+Even though it **looks like** an array, it’s just a **smart shortcut** to unpack the two values returned by `useState`.
+
+---
+
+#### 🔍 Step-by-step: What's happening?
+
+Imagine this:
+
+```js
+const result = useState(0);
+console.log(result);
+```
+
+What you’ll get in `result` is an **array** with 2 items:
+
+```js
+[0, function]
+```
+
+* The first item is the **current value** (`count`, starts at 0).
+* The second item is a **function** that lets you **update** the value.
+
+React gives you back these **two things in one array**.
+
+---
+
+#### 🧪 So this line:
+
+```js
+const [count, setCount] = useState(0);
+```
+
+is **just shorthand** for doing this:
+
+```js
+const result = useState(0);
+const count = result[0];       // The value (0 at first)
+const setCount = result[1];    // The function to change it
+```
+
+But JavaScript lets you write it **neater** using **destructuring**:
+
+```js
+const [count, setCount] = useState(0);
+```
 
 ## 🔧 Now Use It in App.jsx
 
