@@ -205,7 +205,7 @@ This uses useState too!
 
 ---
 
-## ✅ Summary (Like You’re 5)
+## ✅ Summary 
 
 * **React forgets things** after each change unless you use `useState`
 * `useState` helps React **remember values**
